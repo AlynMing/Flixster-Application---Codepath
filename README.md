@@ -32,7 +32,7 @@ The transitions were challenging. But loved the project! Will ensure to make it 
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://gi
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
 
 ## Flix Part 1
 
