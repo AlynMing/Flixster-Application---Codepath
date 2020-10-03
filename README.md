@@ -62,4 +62,4 @@ I loved working on the app as it helped me understand the basics of Android prog
 ### Open-source libraries used
 
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bum
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
