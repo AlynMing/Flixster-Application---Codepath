@@ -3,21 +3,32 @@ package com.example.flixster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Movie {
+@Parcel
+public class Movie implements Serializable{
+    int movieId;
     String posterPath;
     String backdropPath;
     String title;
     String overview;
+    double rating;
+
+    public Movie(){
+
+    }
 
     public Movie(JSONObject jsonObject) throws JSONException {
         backdropPath = jsonObject.getString("backdrop_path");
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
+        rating = jsonObject.getDouble("vote_average");
+        movieId = jsonObject.getInt("id");
     }
 
     public static List<Movie> fromJsonArray (JSONArray movieJsonArray) throws JSONException{
@@ -42,6 +53,15 @@ public class Movie {
 
     public String getOverview() {
         return overview;
+    }
+
+    public double getRating() {
+        return rating;
+
+    }
+
+    public int getMovieId() {
+        return movieId;
     }
 }
 
